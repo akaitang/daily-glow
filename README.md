@@ -72,3 +72,8 @@ python -m http.server 8000
 - `content/archive.json`：最近內容標題，用來降低重複。
 - `scripts/generate_daily.py`：呼叫 Responses API 網路搜尋並驗證來源。
 - `.github/workflows/site.yml`：GitHub Pages 部署與每日更新排程。
+
+
+## 重要：上傳檔案時
+
+請解壓縮 ZIP，進入 `daily-glow` 資料夾後，將**資料夾內的所有檔案與子資料夾**上傳到 Repository 根目錄；不要把外層 `daily-glow` 資料夾再包一層，也不要只上傳 ZIP。必須保留隱藏的 `.github/workflows/site.yml`。

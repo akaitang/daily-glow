@@ -10,9 +10,9 @@ on:
         required: false
         type: boolean
         default: false
+  # GitHub Actions cron uses UTC. 16:10 UTC = 00:10 the next day in Taiwan (UTC+8).
   schedule:
-    - cron: "10 0 * * *"
-      timezone: "Asia/Taipei"
+    - cron: "10 16 * * *"
 
 permissions:
   contents: write
